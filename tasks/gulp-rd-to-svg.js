@@ -3,8 +3,18 @@ var through = require('through2');
 var path = require('path');
 var rd = require('railroad-diagrams');
 
+var NAMESPACE = {
+    xmlns: 'http://www.w3.org/2000/svg',
+    link: 'http://www.w3.org/1999/xlink'
+};
+
 function convert(file, options) {
-    return rd.Diagram(file.contents.toString()).toString();
+    var svg = rd.Diagram(file.contents.toString());
+
+    svg.attrs['xmlns'] = NAMESPACE.xmlns;
+    svg.attrs['xmlns:xlink'] = NAMESPACE.link;
+
+    return svg.toString();
 }
 
 module.exports = function (options) {

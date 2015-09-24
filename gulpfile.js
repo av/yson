@@ -4,6 +4,7 @@ var $ = require('requirist')([
 
     //Node Modules
     'gulp', 'gulp-util',
+    'gulp-rename as rename',
     'gulp-ext-replace as extReplace',
     'del',
 
@@ -20,6 +21,9 @@ gulp.task('diagrams:toSVG', function() {
     return gulp.src($.paths.src.diagrams)
         .pipe($.toSVG())
         .pipe($.extReplace('.svg'))
+        .pipe($.rename(function(path) {
+            path.dirname = '';
+        }))
         .pipe(gulp.dest($.paths.dest.diagrams))
 });
 
