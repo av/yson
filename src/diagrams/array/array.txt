@@ -1,0 +1,1 @@
+Array is ordered collection of values. There are no bounding structures in YSON to determine where array starts and ends and whole array notation consists just of values, each followed by a comma.

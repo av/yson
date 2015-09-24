@@ -1,0 +1,1 @@
+Objects are plain lists of property names and their values, separated by EOL's. Indentation matters though.

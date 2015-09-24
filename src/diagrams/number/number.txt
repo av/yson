@@ -1,0 +1,1 @@
+Numbers in YSON are indentical to JSON ones, i.e. 1.03, 42, -3e12.
