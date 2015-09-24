@@ -60,4 +60,4 @@ father
 
 ![Object](/assets/notations/object.svg?raw=true "Object")
 
-![Object](https://rawgithub.com/iamfrontender/yson/assets/notations/object.svg)
+![Object](https://rawgit.com/iamfrontender/yson/master/assets/notations/object.svg)
