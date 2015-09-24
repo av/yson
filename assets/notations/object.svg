@@ -1,4 +1,13 @@
 <svg class="railroad-diagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121" height="62" viewBox="0 0 121 62">
+    <style>
+        /* <![CDATA[ */
+    g {
+      fill: orange;
+      stroke: black;
+      stroke-width: 10px; // Note that the value of a pixel depend on the viewBox
+    }
+    /* ]]> */
+    </style>
 <g transform="translate(.5 .5)">
 <path d="M 20 21 v 20 m 10 -20 v 20 m -10 -10 h 20.5"></path>
 <path d="M40 31h10"></path>
