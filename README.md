@@ -37,7 +37,7 @@ father
   "name": "Luke Skywalker",
   "height": 1.72,
   "hair_color": "Blond",
-  "birth_year": 19 BBY,
+  "birth_year": "19 BBY",
   "gender": "Male",
   "homeworld": "http://swapi.co/api/planets/1/",
   "films": [
