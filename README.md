@@ -59,3 +59,5 @@ father
 ## Structures
 
 ![Object](/assets/notations/object.svg?raw=true "Object")
+
+![Object](https://rawgithub.com/iamfrontender/yson/assets/notations/object.svg)
