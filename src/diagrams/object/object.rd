@@ -1,0 +1,4 @@
+Diagram(
+        Skip(),
+        'EOF'
+	)
