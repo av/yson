@@ -1,4 +1,2 @@
-Diagram(
-        Skip(),
-        'EOF'
-	)
+'EOL',
+NonTerminal('sunny')
