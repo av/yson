@@ -15,25 +15,32 @@ var NAMESPACE = {
 
 var STYLE = $.fs.readFileSync('./node_modules/railroad-diagrams/railroad-diagrams.css', 'utf-8');
 
+function FakeStyle(content) {
+    this.content = content;
+}
+
+FakeStyle.prototype = {
+    format: function() {
+        return {
+            addTo: function() {}
+        };
+    },
+
+    toString: function() {
+        return '<style>' +
+                    '/* <![CDATA[ */' +
+                    this.content +
+                    '/* ]]> */' +
+               '</style>';
+    }
+};
+
 function convert(file, options) {
     var svg = $.rd.Diagram(file.contents.toString());
 
     svg.attrs['xmlns'] = NAMESPACE.xmlns;
     svg.attrs['xmlns:xlink'] = NAMESPACE.link;
-    svg.items.unshift({
-        tagName: 'style',
-        format: function() {
-
-        },
-        addTo: function() {
-
-        },
-        toString: function() {
-            return '/* <![CDATA[ */' +
-                    STYLE +
-                    '/* ]]> */';
-        }
-    });
+    svg.children.unshift(new FakeStyle(STYLE));
 
     return svg.toString();
 }
