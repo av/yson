@@ -58,13 +58,8 @@ father
 
 ## Structures
 
-![Object](https://rawgit.com/iamfrontender/yson/master/assets/notations/object.svg "Object")
-![Object](https://cdn.rawgit.com/iamfrontender/yson/master/assets/notations/object.svg "Object")
-
+![Object](assets/notations/object.svg?raw=true "Object")
 ![Object](https://cdn.rawgit.com/iamfrontender/yson/master/assets/notations/array.svg "Object")
-
 ![Object](https://cdn.rawgit.com/iamfrontender/yson/master/assets/notations/number.svg "Object")
-
 ![Object](https://cdn.rawgit.com/iamfrontender/yson/master/assets/notations/string.svg "Object")
-
 ![Object](https://cdn.rawgit.com/iamfrontender/yson/master/assets/notations/value.svg "Object")
