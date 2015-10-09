@@ -1,2 +1,3 @@
-'EOL',
-NonTerminal('sunny')
+Diagram(
+        NonTerminal('')
+	)

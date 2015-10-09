@@ -3,6 +3,7 @@ var ROOT =          './';
 var ANY_FILE =      '*';
 var ANY_FOLDER =    '**';
 var RD_FILES =      '*.rd';
+var SVG_FILES =     '*.svg';
 var SRC =           'src';
 var ASSETS =        'assets';
 var NOTATIONS =     'notations';
@@ -19,7 +20,8 @@ module.exports = {
         page: globJoin(ROOT, SRC, PAGE)
     },
     dest: {
-        diagrams: globJoin(ROOT, ASSETS, NOTATIONS)
+        diagrams: globJoin(ROOT, ASSETS, NOTATIONS),
+        diagramsSVG: globJoin(ROOT, ASSETS, NOTATIONS, SVG_FILES)
     },
     cleanup: [
         globJoin(ROOT, ASSETS, NOTATIONS, ANY_FOLDER, ANY_FILE)

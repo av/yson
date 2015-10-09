@@ -44,9 +44,7 @@ function convert(file, options) {
     svg.attrs['xmlns:xlink'] = NAMESPACE.link;
     svg.children.unshift(new FakeStyle(STYLE));
 
-    console.log(svg.toString());
-
-    return svg.toString();
+    return '<?xml version="1.0" encoding="UTF-8"?>\n' + svg.toString();
 }
 
 module.exports = function (options) {
