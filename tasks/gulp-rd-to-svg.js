@@ -7,6 +7,8 @@ var $ = require('requirist')([
     'through2 as through',
     'railroad-diagrams as rd'
 ]);
+var vm = require('vm')
+var DiagramContext = vm.createContext($.rd);
 
 var NAMESPACE = {
     xmlns: 'http://www.w3.org/2000/svg',
@@ -36,11 +38,13 @@ FakeStyle.prototype = {
 };
 
 function convert(file, options) {
-    var svg = $.rd.Diagram(file.contents.toString());
+    var svg = vm.runInContext(file.contents.toString(), DiagramContext);
 
     svg.attrs['xmlns'] = NAMESPACE.xmlns;
     svg.attrs['xmlns:xlink'] = NAMESPACE.link;
     svg.children.unshift(new FakeStyle(STYLE));
+
+    console.log(svg.toString());
 
     return svg.toString();
 }
