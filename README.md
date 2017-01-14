@@ -59,7 +59,11 @@ father
 ## Structures
 
 ![Object](assets/notations/object.png?raw=true "Object")
+
 ![Object](assets/notations/array.png?raw=true "Object")
+
 ![Object](assets/notations/number.png?raw=true "Object")
+
 ![Object](assets/notations/string.png?raw=true "Object")
+
 ![Object](assets/notations/value.png?raw=true "Object")
